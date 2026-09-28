@@ -23,7 +23,7 @@ cursor.close()
 conexion.close()
 
 ficheroUpload = "data.csv"
-nombreBucket = "gcr-output-01"
+nombreBucket = "ingesta-op-put-1"
 
 s3 = boto3.client("s3")
 s3.upload_file(ficheroUpload, nombreBucket, ficheroUpload)
